@@ -15,6 +15,7 @@
     };
 
     (function(d, s, id) {
+    if(document.body.clientWidth<769) return;
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
@@ -25,7 +26,8 @@
   <!-- Your Chat Plugin code -->
   <div class="fb-customerchat"
     attribution=setup_tool
-    page_id="28366003363" greeting_dialog_display="hide">
+    page_id="28366003363" 
+    greeting_dialog_display="hide">
   </div>
   
 </body>
